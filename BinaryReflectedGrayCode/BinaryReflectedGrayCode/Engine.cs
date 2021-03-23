@@ -30,7 +30,6 @@
                 previousValue += number + previousValue;
 
                 this.stringBuilder.AppendLine(previousValue);
-                number++;
             }
 
             string trimmedResult = this.stringBuilder.ToString().TrimEnd();

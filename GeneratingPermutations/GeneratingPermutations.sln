@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratingPermutations", "GeneratingPermutations\GeneratingPermutations.csproj", "{397ED443-691C-4CE1-B337-CF88DC2BDF78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratngPermutationsRecursive", "GeneratngPermutationsRecursive\GeneratngPermutationsRecursive.csproj", "{89679F91-F2C7-4DBD-B5A6-6E35D79F8CCA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{397ED443-691C-4CE1-B337-CF88DC2BDF78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{397ED443-691C-4CE1-B337-CF88DC2BDF78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{397ED443-691C-4CE1-B337-CF88DC2BDF78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{397ED443-691C-4CE1-B337-CF88DC2BDF78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89679F91-F2C7-4DBD-B5A6-6E35D79F8CCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89679F91-F2C7-4DBD-B5A6-6E35D79F8CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89679F91-F2C7-4DBD-B5A6-6E35D79F8CCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89679F91-F2C7-4DBD-B5A6-6E35D79F8CCA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D8FFADEA-0C30-4F91-B4B5-F4CF9B8627F3}
+	EndGlobalSection
+EndGlobal

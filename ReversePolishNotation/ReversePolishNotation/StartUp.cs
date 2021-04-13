@@ -9,7 +9,6 @@
     {
         public static void Main()
         {
-            // Example for first exercise: (9/(5-6/2)-1)*2+8/(7-3)
             Console.Write("Enter mathematical expression: ");
             string input = Console.ReadLine();
 

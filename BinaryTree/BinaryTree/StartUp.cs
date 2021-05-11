@@ -23,8 +23,11 @@
             //tree.Add(ref root, 7);
             //tree.Add(ref root, 3);
 
-            tree.Add(ref root, 2);
+            tree.Add(ref root, 3);
             tree.Add(ref root, 1);
+            tree.Add(ref root, 2);
+            tree.Add(ref root, 0);
+            tree.Add(ref root, 4);
             tree.Add(ref root, 9);
             tree.Add(ref root, 8);
             tree.Add(ref root, 15);
@@ -32,7 +35,7 @@
             tree.Add(ref root, 11);
             tree.Add(ref root, 18);
 
-            tree.RemoveNodeNR(ref root, 9);
+            tree.RemoveNodeNR(ref root, 3);
 
             tree.Traverse(root);
         }
@@ -264,28 +267,34 @@
                 return;
             }
 
-            parent = current;
-            Node leftLowestNode = current.right;
-            while (leftLowestNode.left != null)
+            if (current.right == null)
             {
-                parent = leftLowestNode;
-                leftLowestNode = leftLowestNode.left;
+                parent.left = current.left;
+                return;
             }
 
-            current.value = leftLowestNode.value;
-            if (parent.right == leftLowestNode)
+            parent = current;
+            Node leftLowestNodeFromRightSubTree = current.right;
+            while (leftLowestNodeFromRightSubTree != null && leftLowestNodeFromRightSubTree.left != null)
             {
-                parent.right = leftLowestNode.right;
+                parent = leftLowestNodeFromRightSubTree;
+                leftLowestNodeFromRightSubTree = leftLowestNodeFromRightSubTree.left;
+            }
+
+            current.value = leftLowestNodeFromRightSubTree.value;
+            if (parent.right == leftLowestNodeFromRightSubTree)
+            {
+                parent.right = leftLowestNodeFromRightSubTree.right;
                 return;
             }
 
             if (parent.left != null)
             {
-                parent.left = leftLowestNode.right;
+                parent.left = leftLowestNodeFromRightSubTree.right;
                 return;
             }
 
-            parent.right = leftLowestNode.right;
+            parent.right = leftLowestNodeFromRightSubTree.right;
         }
         #endregion
 

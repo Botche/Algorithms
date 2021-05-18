@@ -9,16 +9,4 @@
     <Folder Include="Output\" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="Output\OutputAdjacencyMatrix.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Output\OutputIncidenceMatrix.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-    <None Update="Output\OutputListOfEdges.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>

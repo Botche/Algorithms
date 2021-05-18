@@ -11,13 +11,13 @@
         private const string OUTPUT_FOLDER_NAME = "/Output/";
         private const string ROOT_LEVEL_OF_PROJECT = "../../..";
 
-        private const string INPUT_FILE_NAME_LIST_OF_EDGES = ROOT_LEVEL_OF_PROJECT  + INPUT_FOLDER_NAME + "/InputListOfEdges.txt";
-        private const string INPUT_FILE_NAME_ADJACENCY_MATRIX = ROOT_LEVEL_OF_PROJECT + INPUT_FOLDER_NAME + "/InputAdjacencyMatrix.txt";
-        private const string INPUT_FILE_NAME_INCIDENCE_MATRIX = ROOT_LEVEL_OF_PROJECT + INPUT_FOLDER_NAME + "/InputIncidenceMatrix.txt";
+        private const string INPUT_FILE_NAME_LIST_OF_EDGES = ROOT_LEVEL_OF_PROJECT  + INPUT_FOLDER_NAME + "InputListOfEdges.txt";
+        private const string INPUT_FILE_NAME_ADJACENCY_MATRIX = ROOT_LEVEL_OF_PROJECT + INPUT_FOLDER_NAME + "InputAdjacencyMatrix.txt";
+        private const string INPUT_FILE_NAME_INCIDENCE_MATRIX = ROOT_LEVEL_OF_PROJECT + INPUT_FOLDER_NAME + "InputIncidenceMatrix.txt";
 
-        private const string OUTPUT_FILE_NAME_LIST_OF_EDGES = ROOT_LEVEL_OF_PROJECT + OUTPUT_FOLDER_NAME + "/OutputListOfEdges.txt";
-        private const string OUTPUT_FILE_NAME_ADJACENCY_MATRIX = ROOT_LEVEL_OF_PROJECT + OUTPUT_FOLDER_NAME + "/OutputAdjacencyMatrix.txt";
-        private const string OUTPUT_FILE_NAME_INCIDENCE_MATRIX = ROOT_LEVEL_OF_PROJECT + OUTPUT_FOLDER_NAME + "/OutputIncidenceMatrix.txt";
+        private const string OUTPUT_FILE_NAME_LIST_OF_EDGES = ROOT_LEVEL_OF_PROJECT + OUTPUT_FOLDER_NAME + "OutputListOfEdges.txt";
+        private const string OUTPUT_FILE_NAME_ADJACENCY_MATRIX = ROOT_LEVEL_OF_PROJECT + OUTPUT_FOLDER_NAME + "OutputAdjacencyMatrix.txt";
+        private const string OUTPUT_FILE_NAME_INCIDENCE_MATRIX = ROOT_LEVEL_OF_PROJECT + OUTPUT_FOLDER_NAME + "OutputIncidenceMatrix.txt";
 
         private int[,] graphMatrix;
 

@@ -1,45 +1,47 @@
 ﻿namespace BinaryTree
 {
     using System;
+    using System.Collections.Generic;
 
     public class StartUp
     {
         public static void Main()
         {
-            Tree tree = new Tree();
-            Node root = new Node();
-            root.value = 6;
-
-            //root.value = 5;
-            // 5 2 8 9 4 1 6 0 7 3
-
-            //tree.Add(ref root, 2);
-            //tree.Add(ref root, 8);
-            //tree.Add(ref root, 9);
-            //tree.Add(ref root, 4);
-            //tree.Add(ref root, 1);
-            //tree.Add(ref root, 6);
-            //tree.Add(ref root, 0);
-            //tree.Add(ref root, 7);
-            //tree.Add(ref root, 3);
-
-            tree.Add(ref root, 3);
-            tree.Add(ref root, 1);
-            tree.Add(ref root, 2);
-            tree.Add(ref root, 0);
-            tree.Add(ref root, 4);
-            tree.Add(ref root, 9);
-            tree.Add(ref root, 8);
-            tree.Add(ref root, 15);
-            tree.Add(ref root, 13);
-            tree.Add(ref root, 11);
-            tree.Add(ref root, 18);
-
-            tree.RemoveNodeNR(ref root, 3);
-
-            tree.Traverse(root);
+            HardAlgorithm();
         }
+
+        public static void HardAlgorithm()
+        {
+            Queue<int> queue = new Queue<int>();
+            queue.Enqueue(83);
+
+            while (queue.Count != 0)
+            {
+                int oldNumberFromQueue = queue.Dequeue();
+
+                if (oldNumberFromQueue % 3 == 0)
+                {
+                    break;
+                }
+
+                int mutlipliedNumberByTwo = oldNumberFromQueue * 2;
+                queue.Enqueue(mutlipliedNumberByTwo);
+
+                int oldNumberMinusOne = oldNumberFromQueue - 1;
+
+                if (oldNumberMinusOne % 3 == 0)
+                {
+                    int numberDividedByThree = oldNumberMinusOne / 3;
+                    queue.Enqueue(numberDividedByThree);
+                }
+            }
+
+        }
+
+
+
     }
+
 
     public class Node
     {
